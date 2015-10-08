@@ -193,6 +193,17 @@ namespace TeamCitySharp.IntegrationTests
         }
 
         [Test]
+        public void it_returns_build_by_id()
+        {
+            var client = new TeamCityClient("devciserver:8080");
+            client.Connect("ciserver", "ciserver");
+
+            var build = client.Builds.BuildById(174481);
+
+            Assert.IsNotNull(build, "No builds by id have been found");
+        }
+
+        [Test]
         public void GetBuildById_ReturnsChanges()
         {
             var client = new TeamCityClient("teamcity.codebetter.com");

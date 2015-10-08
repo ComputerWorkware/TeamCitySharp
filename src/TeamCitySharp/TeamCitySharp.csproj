@@ -74,11 +74,13 @@
     <Compile Include="ActionTypes\ServerInformation.cs" />
     <Compile Include="ActionTypes\StringExtensions.cs" />
     <Compile Include="Connection\ITeamCityCaller.cs" />
+    <Compile Include="DomainEntities\ArtifactDependenciesOfBuild.cs" />
     <Compile Include="DomainEntities\Assignment.cs" />
     <Compile Include="DomainEntities\ChangesWrapper.cs" />
     <Compile Include="DomainEntities\Investigation.cs" />
     <Compile Include="DomainEntities\InvestigationWrapper.cs" />
     <Compile Include="DomainEntities\ResolutionWrapper.cs" />
+    <Compile Include="DomainEntities\SnapshotDependenciesOfBuild.cs" />
     <Compile Include="DomainEntities\TestOccurrence.cs" />
     <Compile Include="DomainEntities\TestOccurrenceWrapper.cs" />
     <Compile Include="Locators\TestLocator.cs" />

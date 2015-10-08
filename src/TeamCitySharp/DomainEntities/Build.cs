@@ -18,6 +18,8 @@ namespace TeamCitySharp.DomainEntities
         public Agent Agent { get; set; }
         public ChangesList LastChanges { get; set; }
         public ChangesWrapper Changes { get; set; }
+        public ArtifactDependenciesOfBuild ArtifactDependencies { get; set; }
+        public SnapshotDependenciesOfBuild SnapshotDependencies { get; set; }
 
         public override string ToString()
         {
